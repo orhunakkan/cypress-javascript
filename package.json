@@ -6,7 +6,7 @@
   "author": "Orhun Akkan",
   "main": "index.js",
   "scripts": {
-    "test:smoke": "cypress run --env grepTags=@smoke --browser edge"
+    "test:smoke": "npx cypress run cypress/tests/e2e/heroku-app-smoke.cy.js --browser edge"
   },
   "dependencies": {
     "cypress": "^14.4.1"
