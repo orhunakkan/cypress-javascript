@@ -30,7 +30,7 @@ describe("Heroku App - Smoke Suite", () => {
         cy.visit("https://the-internet.herokuapp.com/");
     });
 
-    it("should load the homepage and validate title and basic elements @smoke", async () => {
+    it("------------------------------------------- @smoke", async () => {
         cy.title().should("eq", "The Internet");
         cy.get("h1").should("contain", "Welcome to the-internet");
         cy.get("h2").should("contain", "Available Examples");
