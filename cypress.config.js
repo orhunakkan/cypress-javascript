@@ -5,5 +5,6 @@ export default defineConfig({
     setupNodeEvents(on, config) { },
     specPattern: 'cypress/tests/**/*.cy.js',
     baseUrl: 'https://the-internet.herokuapp.com/',
+    defaultBrowser: 'edge',
   },
 })
