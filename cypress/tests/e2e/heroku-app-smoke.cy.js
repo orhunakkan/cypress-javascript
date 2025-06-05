@@ -1,7 +1,7 @@
 describe("Heroku App - Smoke Suite @smoke", () => {
 
     beforeEach(async () => {
-        cy.visit("https://the-internet.herokuapp.com/");
+        cy.visit("/");
     });
 
     it("should load the homepage and validate title and basic elements", async () => {
