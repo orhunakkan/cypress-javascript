@@ -1,0 +1,13 @@
+{
+  "name": "cypress-javascript",
+  "version": "1.0.0",
+  "description": "Cypress-JavaScript Framework",
+  "license": "ISC",
+  "author": "Orhun Akkan",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "cypress": "^14.4.1"
+  }
+}
