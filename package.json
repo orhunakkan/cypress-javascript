@@ -11,7 +11,5 @@
   "dependencies": {
     "cypress": "^14.4.1"
   },
-  "devDependencies": {
-    "@cypress/grep": "^4.0.1"
-  }
+  "devDependencies": {}
 }
