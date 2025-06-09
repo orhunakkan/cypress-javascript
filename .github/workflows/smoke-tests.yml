@@ -31,4 +31,4 @@ jobs:
           sudo apt install microsoft-edge-stable
 
       - name: Run smoke tests
-        run: npm run test:smoke
+        run: npx cypress run cypress/tests/e2e/heroku-app-smoke.cy.js

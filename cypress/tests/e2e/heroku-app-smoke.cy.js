@@ -1,4 +1,4 @@
-describe("Heroku App - Smoke Suite @smoke", () => {
+describe("Heroku App - Smoke Suite", () => {
 
     beforeEach(async () => {
         cy.visit("/");

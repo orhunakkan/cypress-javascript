@@ -5,9 +5,7 @@
   "license": "ISC",
   "author": "Orhun Akkan",
   "main": "index.js",
-  "scripts": {
-    "test:smoke": "npx cypress run cypress/tests/e2e/heroku-app-smoke.cy.js"
-  },
+  "scripts": {},
   "dependencies": {
     "cypress": "^14.4.1"
   },
