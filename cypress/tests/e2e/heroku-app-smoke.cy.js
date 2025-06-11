@@ -1,4 +1,4 @@
-import HerokuHomePage from '../../support/pages/HerokuHomePage';
+import HerokuHomePage from '../../pages/HerokuHomePage';
 
 describe("Heroku App - Smoke Suite", () => {
 
