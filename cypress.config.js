@@ -14,6 +14,13 @@ export default defineConfig({
     screenshotOnRunFailure: false,
     video: false,
     numTestsKeptInMemory: process.env.CI ? 4 : 50,
+    reporter: 'mochawesome',
+    reporterOptions: {
+      reportDir: 'cypress/cypress-reports',
+      overwrite: true,
+      html: true,
+      json: true
+    }
   },
   env: {
     ignoreHttpErrors: true,
