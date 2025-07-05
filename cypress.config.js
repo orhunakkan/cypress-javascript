@@ -1,4 +1,8 @@
 import { defineConfig } from 'cypress'
+import { getEnvironment } from './cypress/utilities/environments.js';
+
+const env = process.env.env || 'dev';
+const environment = getEnvironment(env);
 
 export default defineConfig({
   e2e: {
@@ -6,7 +10,7 @@ export default defineConfig({
       return config
     },
     specPattern: 'cypress/tests/**/*.cy.js',
-    baseUrl: 'https://the-internet.herokuapp.com/',
+    baseUrl: environment.baseURL,
     defaultBrowser: 'edge',
     defaultCommandTimeout: 30000,
     experimentalRunAllSpecs: true,

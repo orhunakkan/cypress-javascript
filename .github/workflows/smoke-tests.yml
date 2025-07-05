@@ -31,7 +31,7 @@ jobs:
           sudo apt install microsoft-edge-stable
 
       - name: Run smoke tests
-        run: npx cypress run cypress/tests/e2e/heroku-app-smoke.cy.js
+        run: npx cypress run --spec cypress/tests/e2e/heroku-app-smoke.cy.js
 
       - name: Upload Test Results
         if: always()
