@@ -25,7 +25,7 @@ jobs:
       
       - run:
           name: Run smoke tests
-          command: npx cypress run cypress/tests/e2e/heroku-app-smoke.cy.js
+          command: npx cypress run --spec cypress/tests/e2e/heroku-app-smoke.cy.js
       
       - store_artifacts:
           path: cypress/cypress-reports/
