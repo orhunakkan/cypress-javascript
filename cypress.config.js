@@ -15,8 +15,8 @@ export default defineConfig({
     defaultCommandTimeout: 30000,
     experimentalRunAllSpecs: true,
     retries: process.env.CI ? 1 : 0,
-    screenshotOnRunFailure: false,
-    video: false,
+    screenshotOnRunFailure: true,
+    video: true,
     numTestsKeptInMemory: process.env.CI ? 4 : 50,
     reporter: 'mochawesome',
     reporterOptions: {
