@@ -12,7 +12,6 @@ jobs:
       
       - node/install-packages:
           pkg-manager: npm
-          cache-version: v1
       
       - run:
           name: Install Microsoft Edge
