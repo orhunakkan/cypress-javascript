@@ -17,7 +17,6 @@ export default defineConfig({
     retries: process.env.CI ? 1 : 0,
     screenshotOnRunFailure: true,
     video: true,
-    numTestsKeptInMemory: process.env.CI ? 4 : 50,
     reporter: 'mochawesome',
     reporterOptions: {
       reportDir: 'cypress/cypress-reports',
