@@ -1,0 +1,12 @@
+node_modules/
+cypress/videos/
+cypress/screenshots/
+cypress/cypress-reports/
+dist/
+build/
+coverage/
+*.html
+*.json
+*.md
+package-lock.json
+*.log

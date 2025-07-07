@@ -9,10 +9,10 @@ jobs:
       - image: cimg/node:22.0-browsers
     steps:
       - checkout
-      
+
       - node/install-packages:
           pkg-manager: npm
-      
+
       - run:
           name: Install Microsoft Edge
           command: |
@@ -22,11 +22,11 @@ jobs:
             sudo rm microsoft.gpg
             sudo apt update
             sudo apt install microsoft-edge-stable
-      
+
       - run:
           name: Run smoke tests
           command: npx cypress run --spec cypress/tests/e2e/heroku-app-smoke.cy.js
-      
+
       - store_artifacts:
           path: cypress/cypress-reports/
           destination: cypress-report
@@ -35,11 +35,11 @@ workflows:
   smoke-tests:
     jobs:
       - smoke-tests
-  
+
   nightly-smoke-tests:
     triggers:
       - schedule:
-          cron: "0 3 * * *"
+          cron: '0 3 * * *'
           filters:
             branches:
               only:

@@ -1,4 +1,4 @@
-import { defineConfig } from 'cypress'
+import { defineConfig } from 'cypress';
 import { getEnvironment } from './cypress/utilities/environments.js';
 
 const env = process.env.env || 'dev';
@@ -7,7 +7,7 @@ const environment = getEnvironment(env);
 export default defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
-      return config
+      return config;
     },
     specPattern: 'cypress/tests/**/*.cy.js',
     baseUrl: environment.baseURL,
@@ -22,10 +22,10 @@ export default defineConfig({
       reportDir: 'cypress/cypress-reports',
       overwrite: true,
       html: true,
-      json: true
-    }
+      json: true,
+    },
   },
   env: {
     ignoreHttpErrors: true,
-  }
-})
+  },
+});
