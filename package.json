@@ -8,6 +8,7 @@
   "type": "module",
   "scripts": {},
   "dependencies": {
+    "dotenv": "^17.2.1",
     "cypress": "^15.0.0"
   },
   "devDependencies": {
