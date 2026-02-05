@@ -1,7 +1,9 @@
 /// <reference types="cypress" />
 
 class HomePage {
-  constructor() {}
+  constructor() {
+    this.webInputsCard = () => cy.findByRole('link', { name: 'Web inputs' });
+  }
 }
 
-export default new HomePage();
+export default HomePage;
