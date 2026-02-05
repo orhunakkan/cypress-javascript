@@ -2,14 +2,13 @@
 import HomePage from '../../pages/homepage';
 
 describe('Homepage Tests', () => {
+  const homePage = new HomePage();
 
-    const homePage = new HomePage();
+  beforeEach(() => {
+    cy.visit('/');
+  });
 
-    beforeEach(() => {
-        cy.visit('/');
-    });
-
-    it('should display web inputs card', () => {
-        homePage.webInputsCard().should('be.visible');
-    });
+  it('should display web inputs card', () => {
+    homePage.webInputsCard().should('be.visible');
+  });
 });
